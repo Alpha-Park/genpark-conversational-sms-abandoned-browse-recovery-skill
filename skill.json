@@ -1,0 +1,42 @@
+{
+  "name": "genpark-conversational-sms-abandoned-browse-recovery-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational SMS abandoned browse re-engagement copy generator with scarcity triggers and TCPA compliance.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "attentive",
+    "postscript",
+    "sms-marketing",
+    "abandoned-browse",
+    "conversion-ai"
+  ],
+  "inputs": {
+    "customer_first_name": {
+      "type": "string"
+    },
+    "viewed_product": {
+      "type": "string"
+    },
+    "inventory_left": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "campaign_message_id": {
+      "type": "string"
+    },
+    "sms_body_text": {
+      "type": "string"
+    },
+    "projected_conversion_rate_pct": {
+      "type": "number"
+    },
+    "campaign_preview_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
